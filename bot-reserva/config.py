@@ -7,8 +7,11 @@ import os
 class DefaultConfig:
     """ Bot Configuration """
 
-    PORT = 3978
+    PORT = 3979
     APP_ID = os.environ.get("MicrosoftAppId", "")
     APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
-    BACKEND_URL = os.environ.get("BACKEND_URL", "http://api:8080/api/reservas")
-
+    API_BASE_URL = "http://localhost:8080/api" 
+    CLU_ENDPOINT = "https://bothotellinguagem.cognitiveservices.azure.com/"
+    CLU_KEY = "DwkY1s1Q2fnL9LrRhO4pFyHFIneWw5xxJ9y18yxvUrOsFmsjs0XxJQQJ99BKACBsN54XJ3w3AAAaACOGv8RJ"
+    CLU_PROJECT = "ProjetoCloudHotel"
+    CLU_DEPLOYMENTNAME = "ReservaHotel"
